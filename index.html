@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: steelblue;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            background-color: rgb(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 10px 40px;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .form-control {
+            position: relative;
+            margin: 60px 0px 25px;
+        }
+        .form-control input{
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px white solid;
+            padding-bottom: 10px;
+            font-size: 18px;
+            color: white;
+            /* font-family: 'Courier New', Courier, monospace; */
+            
+        }
+        .form-control input:focus, .form-control input:valid{
+            outline: 0;
+            border-bottom-color: lightblue;
+        }
+        .form-control label span {
+            display: inline-block;
+            font-size: 18px;
+            min-width: 5px;
+            transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .form-control input:focus + label span,  .form-control input:valid + label span {
+            color: skyblue;
+            transform: translateY(-25px);
+        }
+        .form-control label {
+            position: absolute;
+            font-size: 18px;
+            top: 4px;
+            left: 0px;
+        }
+
+        .btn {
+            padding: 15px;
+            width: 100%;
+            margin: 15px 0px;
+            background-color: skyblue;
+            border: 0;
+            border-radius: 5px;
+        }
+        .btn:active{
+            transform: scale(0.98);
+        }
+        p.text {
+            display: inline-block;
+            margin-top: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Please Login</h1>
+        <form> 
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+                <!-- <label>
+                    <span style="transition-delay: 0ms;">E</span>
+                    <span style="transition-delay: 50ms;">m</span>
+                    <span style="transition-delay: 100ms;">a</span>
+                    <span style="transition-delay: 150ms;">i</span>
+                    <span style="transition-delay: 200ms;">l</span>
+                </label> -->
+            </div>
+            <div class="form-control">
+                <input type="password" required>
+                <label>Password</label>
+                <!-- <label>
+                    <span style="transition-delay: 0ms;">p</span>
+                    <span style="transition-delay: 50ms;">a</span>
+                    <span style="transition-delay: 100ms;">s</span>
+                    <span style="transition-delay: 150ms;">s</span>
+                    <span style="transition-delay: 200ms;">w</span>
+                    <span style="transition-delay: 250ms;">o</span>
+                    <span style="transition-delay: 300ms;">r</span>
+                    <span style="transition-delay: 350ms;">d</span>
+            </label> -->
+
+            </div>
+            <button class="btn">Login</button>
+            <p class="text">Don't have an account?</p>
+            <a href="#">Register</a>
+        </form>
+    </div>
+
+    <script>
+        const labels = document.querySelectorAll('.form-control label');
+        labels.forEach(label => {
+            label.innerHTML = label.innerText
+            .split('')
+            .map((letter, ind)=> `<span style="transition-delay:${ind*50}ms">${letter}</span>`)
+            .join('')
+        });
+    </script>
+</body>
+</html>
