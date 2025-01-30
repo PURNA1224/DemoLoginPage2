@@ -3,133 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            background-color: steelblue;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .container {
-            background-color: rgb(0, 0, 0, 0.3);
-            border-radius: 5px;
-            padding: 10px 40px;
-        }
-        .container h1 {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        .form-control {
-            position: relative;
-            margin: 60px 0px 25px;
-        }
-        .form-control input{
-            display: block;
-            width: 100%;
-            background-color: transparent;
-            border: 0;
-            border-bottom: 2px white solid;
-            padding-bottom: 10px;
-            font-size: 18px;
-            color: white;
-            /* font-family: 'Courier New', Courier, monospace; */
-            
-        }
-        .form-control input:focus, .form-control input:valid{
-            outline: 0;
-            border-bottom-color: lightblue;
-        }
-        .form-control label span {
-            display: inline-block;
-            font-size: 18px;
-            min-width: 5px;
-            transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        .form-control input:focus + label span,  .form-control input:valid + label span {
-            color: skyblue;
-            transform: translateY(-25px);
-        }
-        .form-control label {
-            position: absolute;
-            font-size: 18px;
-            top: 4px;
-            left: 0px;
-        }
-
-        .btn {
-            padding: 15px;
-            width: 100%;
-            margin: 15px 0px;
-            background-color: skyblue;
-            border: 0;
-            border-radius: 5px;
-        }
-        .btn:active{
-            transform: scale(0.98);
-        }
-        p.text {
-            display: inline-block;
-            margin-top: 30px;
-        }
-        a {
-            text-decoration: none;
-            color: skyblue;
-        }
-
-    </style>
+    <title>Kandiboina Purna Sekhar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For Icons -->
 </head>
 <body>
-    <div class="container">
-        <h1>Please Login</h1>
-        <form> 
-            <div class="form-control">
-                <input type="text" required>
-                <label>Email</label>
-                <!-- <label>
-                    <span style="transition-delay: 0ms;">E</span>
-                    <span style="transition-delay: 50ms;">m</span>
-                    <span style="transition-delay: 100ms;">a</span>
-                    <span style="transition-delay: 150ms;">i</span>
-                    <span style="transition-delay: 200ms;">l</span>
-                </label> -->
-            </div>
-            <div class="form-control">
-                <input type="password" required>
-                <label>Password</label>
-                <!-- <label>
-                    <span style="transition-delay: 0ms;">p</span>
-                    <span style="transition-delay: 50ms;">a</span>
-                    <span style="transition-delay: 100ms;">s</span>
-                    <span style="transition-delay: 150ms;">s</span>
-                    <span style="transition-delay: 200ms;">w</span>
-                    <span style="transition-delay: 250ms;">o</span>
-                    <span style="transition-delay: 300ms;">r</span>
-                    <span style="transition-delay: 350ms;">d</span>
-            </label> -->
 
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Kandiboina Purna Sekhar</h1>
+            <p class="bio">"To work in a firm with a professional, work-driven environment where I can utilize and apply my knowledge and skills, which would enable me as a fresh graduate to grow while fulfilling organizational goals."</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:purnasekhar7777@gmail.com">purnasekhar7777@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> 7995288182</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/purna-kandiboina-63a670251" target="_blank">LinkedIn</a></p>
             </div>
-            <button class="btn">Login</button>
-            <p class="text">Don't have an account?</p>
-            <a href="#">Register</a>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills & Competencies</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="skill-bar java"></div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar python"></div>
+            </div>
+            <div class="skill">
+                <h3>React.js</h3>
+                <div class="skill-bar react"></div>
+            </div>
+            <div class="skill">
+                <h3>SpringBoot</h3>
+                <div class="skill-bar springboot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-list">
+            <div class="degree">
+                <h3>B.Tech in Information Technology</h3>
+                <p>SASI Institute of Technology & Engineering, 2024 - CGPA: 8.3</p>
+            </div>
+            <div class="degree">
+                <h3>Intermediate (MPC)</h3>
+                <p>Sri Chaitanya Junior College, 2020 - CGPA: 9.46</p>
+            </div>
+            <div class="degree">
+                <h3>SSC</h3>
+                <p>Sri Chaitanya Techno School, 2018 - CGPA: 9.8</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Early Prediction of Heart Disease Using Machine Learning</h3>
+            <p>Used machine learning models to predict heart disease risk, aiding in early detection and risk assessment.</p>
+        </div>
+        <div class="project-card">
+            <h3>Quiz Website Using Spring Boot</h3>
+            <p>Developed a quiz platform with CRUD functionality for quizzes and user management.</p>
+        </div>
+        <div class="project-card">
+            <h3>TODO List Using React.js</h3>
+            <p>Built a task management app with interactive UI using React.js.</p>
+        </div>
+        <div class="project-card">
+            <h3>Food Recipes Application Using React.js</h3>
+            <p>Developed a dynamic recipe app fetching data from external APIs to display recipes and instructions.</p>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>The Complete Java Certification Course (Udemy)</li>
+            <li>Python Programming Certification (InterPe)</li>
+            <li>SQL Certification (HackerRank)</li>
+            <li>GitHub Tutorial for Beginners (GreatLearning Academy)</li>
+        </ul>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:purnasekhar7777@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
-    </div>
+    </section>
 
-    <script>
-        const labels = document.querySelectorAll('.form-control label');
-        labels.forEach(label => {
-            label.innerHTML = label.innerText
-            .split('')
-            .map((letter, ind)=> `<span style="transition-delay:${ind*50}ms">${letter}</span>`)
-            .join('')
-        });
-    </script>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Kandiboina Purna Sekhar. All Rights Reserved.</p>
+        <a href="path_to_your_resume.pdf" download="Purna_Sekhar_Resume.pdf">Download Resume</a>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
