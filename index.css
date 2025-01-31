@@ -7,11 +7,13 @@ body {
     color: #e0e0e0;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: auto;
 }
 
+/* Header Styles */
 header {
     background: #222;
     color: white;
@@ -23,26 +25,39 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: #FFD700; /* Gold color */
 }
 
 header .bio {
     font-style: italic;
     margin-top: 10px;
+    color: #f4f4f4;
 }
 
 header .contact-info p {
     margin: 5px 0;
 }
 
+header .contact-info a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none;
+}
+
+header .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
 section {
     padding: 40px 0;
 }
 
+/* Heading Styles */
 h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
-    color: #f4f4f4;
+    color: #FFD700; /* Gold color for headings */
 }
 
 /* Skills Section */
@@ -59,14 +74,15 @@ h2 {
 
 .skill i {
     font-size: 3rem;
-    color: #4CAF50;
+    color: #FFD700; /* Gold color for icons */
 }
 
 .skill h3 {
     margin-top: 10px;
+    color: #e0e0e0;
 }
 
-/* Cards */
+/* Cards Styles */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -78,5 +94,129 @@ h2 {
     color: #e0e0e0;
     padding: 20px;
     margin: 15px;
-    width: 23
+    width: 23%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
 
+.card:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold for titles */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #dcdcdc;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold color */
+    color: #181818;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* Lighter gold */
+}
+
+/* Contact Section */
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    color: #FFD700; /* Gold color for labels */
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold for buttons */
+    color: #181818;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffcc00; /* Lighter gold */
+}
+
+/* Footer Styles */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #skills .skills-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
