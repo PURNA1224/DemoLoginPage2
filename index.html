@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kandiboina Purna Sekhar - Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For Icons -->
 </head>
 <body>
@@ -27,20 +27,20 @@
         <h2>Skills & Competencies</h2>
         <div class="skills-container">
             <div class="skill">
+                <i class="fab fa-java"></i>
                 <h3>Java</h3>
-                <div class="skill-bar java"></div>
             </div>
             <div class="skill">
+                <i class="fab fa-python"></i>
                 <h3>Python</h3>
-                <div class="skill-bar python"></div>
             </div>
             <div class="skill">
+                <i class="fab fa-react"></i>
                 <h3>React.js</h3>
-                <div class="skill-bar react"></div>
             </div>
             <div class="skill">
+                <i class="fas fa-cogs"></i>
                 <h3>SpringBoot</h3>
-                <div class="skill-bar springboot"></div>
             </div>
         </div>
     </section>
@@ -48,18 +48,21 @@
     <!-- Education Section -->
     <section id="education">
         <h2>Education</h2>
-        <div class="education-list">
-            <div class="degree">
+        <div class="cards-container">
+            <div class="card">
                 <h3>B.Tech in Information Technology</h3>
-                <p>SASI Institute of Technology & Engineering, 2024 - CGPA: 8.3</p>
+                <p>SASI Institute of Technology & Engineering</p>
+                <p>Graduation Year: 2024 | CGPA: 8.3</p>
             </div>
-            <div class="degree">
+            <div class="card">
                 <h3>Intermediate (MPC)</h3>
-                <p>Sri Chaitanya Junior College, 2020 - CGPA: 9.46</p>
+                <p>Sri Chaitanya Junior College</p>
+                <p>Graduation Year: 2020 | CGPA: 9.46</p>
             </div>
-            <div class="degree">
+            <div class="card">
                 <h3>SSC</h3>
-                <p>Sri Chaitanya Techno School, 2018 - CGPA: 9.8</p>
+                <p>Sri Chaitanya Techno School</p>
+                <p>Graduation Year: 2018 | CGPA: 9.8</p>
             </div>
         </div>
     </section>
@@ -67,36 +70,62 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Early Prediction of Heart Disease Using Machine Learning</h3>
-            <p>Used machine learning models to predict heart disease risk, aiding in early detection and risk assessment.</p>
-        </div>
-        <div class="project-card">
-            <h3>Quiz Website Using Spring Boot</h3>
-            <p>Developed a quiz platform with CRUD functionality for quizzes and user management.</p>
-        </div>
-        <div class="project-card">
-            <h3>TODO List Using React.js</h3>
-            <p>Built a task management app with interactive UI using React.js.</p>
-        </div>
-        <div class="project-card">
-            <h3>Food Recipes Application Using React.js</h3>
-            <p>Developed a dynamic recipe app fetching data from external APIs to display recipes and instructions.</p>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Early Prediction of Heart Disease Using Machine Learning</h3>
+                <img src="heart-disease-project.jpg" alt="Heart Disease Prediction">
+                <p>Used machine learning models to predict heart disease risk based on medical data, aiding in early detection and risk assessment.</p>
+                <a href="https://github.com/yourusername/heart-disease-prediction" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Quiz Website Using Spring Boot</h3>
+                <img src="quiz-project.jpg" alt="Quiz Website">
+                <p>Developed a quiz platform with CRUD functionality for quizzes and user management.</p>
+                <a href="https://github.com/yourusername/quiz-website" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="card">
+                <h3>TODO List Using React.js</h3>
+                <img src="todo-project.jpg" alt="TODO List App">
+                <p>Built a task management app with interactive UI using React.js.</p>
+                <a href="https://github.com/yourusername/todo-list" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Food Recipes Application Using React.js</h3>
+                <img src="food-recipes-project.jpg" alt="Food Recipes App">
+                <p>Developed a dynamic recipe app fetching data from external APIs to display recipes and instructions.</p>
+                <a href="https://github.com/yourusername/food-recipes" target="_blank" class="btn">View on GitHub</a>
+            </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
     <section id="certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>The Complete Java Certification Course (Udemy)</li>
-            <li>Python Programming Certification (InterPe)</li>
-            <li>SQL Certification (HackerRank)</li>
-            <li>GitHub Tutorial for Beginners (GreatLearning Academy)</li>
-        </ul>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fab fa-udemy"></i>
+                <h3>The Complete Java Certification Course</h3>
+                <p>Udemy</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-python"></i>
+                <h3>Python Programming Certification</h3>
+                <p>InterPe</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-database"></i>
+                <h3>SQL Certification</h3>
+                <p>HackerRank</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub Tutorial for Beginners</h3>
+                <p>GreatLearning Academy</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="mailto:purnasekhar7777@gmail.com" method="post" enctype="text/plain">
@@ -113,7 +142,6 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Kandiboina Purna Sekhar. All Rights Reserved.</p>
-        <a href="path_to_your_resume.pdf" download="Purna_Sekhar_Resume.pdf">Download Resume</a>
     </footer>
 
     <script src="scripts.js"></script>
